@@ -24,6 +24,8 @@
     "*.js": "eslint --cache --fix"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
     "@hot-loader/react-dom": "^16.13.0",
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
@@ -31,6 +33,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.21",
+    "react-infinite-scroll-component": "^5.0.4",
     "regenerator-runtime": "^0.13.5"
   },
   "devDependencies": {
