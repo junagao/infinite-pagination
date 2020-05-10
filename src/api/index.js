@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export default axios.create({
-  baseURL: 'http://sf-legacy-api.now.sh',
+  baseURL: 'https://sf-legacy-api.now.sh',
 })
