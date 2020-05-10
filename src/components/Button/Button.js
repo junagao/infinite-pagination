@@ -1,11 +1,12 @@
 import React from 'react'
 import { string, bool, func } from 'prop-types'
+import ButtonStyled from './Button.styles'
 
 export default function Button({ text, disabled, onClick }) {
   return (
-    <button type="button" disabled={disabled} onClick={onClick}>
+    <ButtonStyled type="button" disabled={disabled} onClick={onClick}>
       {text}
-    </button>
+    </ButtonStyled>
   )
 }
 
