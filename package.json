@@ -29,6 +29,7 @@
     "@hot-loader/react-dom": "^16.13.0",
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
+    "emotion-theming": "^10.0.27",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
