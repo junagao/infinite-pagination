@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import api from 'api'
-import { Item } from 'components'
+import { Item, Loading, EndMessage } from 'components'
 
 const List = () => {
   const [data, setData] = useState([])
@@ -30,8 +30,8 @@ const List = () => {
       dataLength={data.length}
       next={fetchPages}
       hasMore={hasMorePages}
-      loader={<p>Loading...</p>}
-      endMessage={<p>You have hit the end</p>}
+      loader={<Loading />}
+      endMessage={<EndMessage />}
     >
       <ul>
         {data.map(({ id, name }) => (
