@@ -1,15 +1,20 @@
 import React from 'react'
-import { string } from 'prop-types'
+import { string, bool, func } from 'prop-types'
 import { Button } from 'components'
 
-const Item = ({ name }) => (
+const Item = ({ id, name, selected, onSelect }) => (
   <li>
-    <Button text={name}>{name}</Button>
+    <Button text={name} disabled={selected} onClick={() => onSelect(id)}>
+      {name}
+    </Button>
   </li>
 )
 
 Item.propTypes = {
+  id: string.isRequired,
   name: string.isRequired,
+  selected: bool.isRequired,
+  onSelect: func.isRequired,
 }
 
 export default Item
