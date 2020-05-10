@@ -13,7 +13,7 @@ export default function List() {
   const [error, setError] = useState('')
 
   const fetchData = async () => {
-    if (data.length >= 10000) {
+    if (page >= 10000) {
       setHasMorePages(false)
     }
     try {
