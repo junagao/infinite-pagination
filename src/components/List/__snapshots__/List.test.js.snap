@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List matches snapshot 1`] = `
+.emotion-0 {
+  border: 0.25rem solid #f3f3f3;
+  border-radius: 99999em;
+  border-top: 0.25rem solid #777;
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-animation: spin 0.75s linear infinite;
+  animation: spin 0.75s linear infinite;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+<div
+  class="infinite-scroll-component__outerdiv"
+>
+  <div
+    class="infinite-scroll-component "
+    style="height: auto; overflow: auto;"
+  >
+    <ul
+      data-testid="list"
+    />
+    <div
+      class="emotion-0 emotion-1"
+      data-testid="spinner"
+    />
+  </div>
+</div>
+`;
