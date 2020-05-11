@@ -3,7 +3,7 @@ import Text from './EndMessage.styles'
 
 export default function EndMessage() {
   return (
-    <Text>
+    <Text data-testid="end-message">
       <span role="img" aria-label="stop hand emoticon">
         ✋
       </span>{' '}
