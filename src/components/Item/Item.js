@@ -3,10 +3,8 @@ import { string, bool, func } from 'prop-types'
 import { Button } from 'components'
 
 const Item = ({ id, name, selected, onSelect }) => (
-  <li>
-    <Button text={name} disabled={selected} onClick={() => onSelect(id)}>
-      {name}
-    </Button>
+  <li data-testid="list-item">
+    <Button text={name} disabled={selected} onClick={() => onSelect(id)} />
   </li>
 )
 
