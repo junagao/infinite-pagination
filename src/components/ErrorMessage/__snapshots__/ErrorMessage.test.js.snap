@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorMessage matches snapshot 1`] = `
+.emotion-0 {
+  font-size: 1.5rem;
+  color: #BD271E;
+  padding: 2rem 0;
+}
+
+<p
+  class="emotion-0 emotion-1"
+  data-testid="error-message"
+>
+  The following error occurred: 
+  ERROR
+  . Please try again.
+</p>
+`;
