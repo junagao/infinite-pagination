@@ -2,5 +2,5 @@ import React from 'react'
 import Spinner from './Loading.styles'
 
 export default function Loading() {
-  return <Spinner />
+  return <Spinner data-testid="spinner" />
 }
