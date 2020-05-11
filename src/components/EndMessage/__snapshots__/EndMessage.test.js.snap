@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EndMessage matches snapshot 1`] = `
+.emotion-0 {
+  font-size: 1.5rem;
+  color: #111;
+  padding: 2rem 0;
+}
+
+<p
+  class="emotion-0 emotion-1"
+  data-testid="end-message"
+>
+  <span
+    aria-label="stop hand emoticon"
+    role="img"
+  >
+    ✋
+  </span>
+   
+  You have reached the end.
+   
+</p>
+`;

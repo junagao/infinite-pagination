@@ -4,7 +4,12 @@ import ButtonStyled from './Button.styles'
 
 export default function Button({ text, disabled, onClick }) {
   return (
-    <ButtonStyled type="button" disabled={disabled} onClick={onClick}>
+    <ButtonStyled
+      type="button"
+      data-testid="button"
+      disabled={disabled}
+      onClick={onClick}
+    >
       {text}
     </ButtonStyled>
   )

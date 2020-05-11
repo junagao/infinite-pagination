@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button matches snapshot 1`] = `
+.emotion-0 {
+  border: none;
+  color: #111;
+  cursor: pointer;
+  font-size: 4rem;
+  outline: none;
+  padding: 1rem 0;
+  pointer-events: auto;
+  -webkit-transition: all 0.2s cubic-bezier(0.645,0.045,0.355,1) 0s;
+  transition: all 0.2s cubic-bezier(0.645,0.045,0.355,1) 0s;
+  width: 100vw;
+}
+
+.emotion-0:hover {
+  color: #fff;
+  background-color: #111;
+}
+
+<button
+  class="emotion-0 emotion-1"
+  data-testid="button"
+  type="button"
+>
+  item-6
+</button>
+`;

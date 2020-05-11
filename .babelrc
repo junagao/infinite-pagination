@@ -14,8 +14,16 @@
     "@babel/preset-react"
   ],
   "plugins": [
+    "emotion",
     "react-hot-loader/babel",
     ["@babel/plugin-proposal-class-properties", { "loose": true }],
     ["module-resolver", { "root": ["./src"] }]
-  ]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        ["react-remove-properties", { "properties": ["data-testid"] }]
+      ]
+    }
+  }
 }
