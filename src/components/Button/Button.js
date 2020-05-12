@@ -2,21 +2,22 @@ import React from 'react'
 import { string, bool, func } from 'prop-types'
 import ButtonStyled from './Button.styles'
 
-export default function Button({ text, disabled, onClick }) {
+export default function Button({ children, disabled, onSelect, id }) {
   return (
     <ButtonStyled
       type="button"
       data-testid="button"
       disabled={disabled}
-      onClick={onClick}
+      onClick={() => onSelect(id)}
     >
-      {text}
+      {children}
     </ButtonStyled>
   )
 }
 
 Button.propTypes = {
-  text: string.isRequired,
+  children: string.isRequired,
   disabled: bool.isRequired,
-  onClick: func.isRequired,
+  onSelect: func.isRequired,
+  id: string.isRequired,
 }
