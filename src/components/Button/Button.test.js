@@ -11,7 +11,9 @@ describe('Button', () => {
   test('matches snapshot', () => {
     const { container } = render(
       <ThemeProvider theme={theme}>
-        <Button text="item-6" disabled={false} onClick={jest.fn()} />
+        <Button disabled={false} onSelect={jest.fn()} id="daok34-asd32-dsa">
+          item-6
+        </Button>
       </ThemeProvider>,
     )
     expect(container.firstChild).toMatchSnapshot()
@@ -20,7 +22,9 @@ describe('Button', () => {
   test('displays the correct item', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Button text="item-6" disabled={false} onClick={jest.fn()} />
+        <Button disabled={false} onSelect={jest.fn()} id="daok34-asd32-dsa">
+          item-6
+        </Button>
       </ThemeProvider>,
     )
     expect(getByTestId('button')).toHaveTextContent('item-6')
@@ -29,7 +33,9 @@ describe('Button', () => {
   test('render disabled button correctly if disabled - set pointer-events to none and color to grey', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Button text="item-6" disabled onClick={jest.fn()} />
+        <Button disabled onSelect={jest.fn()} id="daok34-asd32-dsa">
+          item-6
+        </Button>
       </ThemeProvider>,
     )
     expect(getByTestId('button')).toHaveStyleRule('pointer-events', 'none')
@@ -41,7 +47,9 @@ describe('Button', () => {
     const handleClick = jest.fn()
     const { container } = render(
       <ThemeProvider theme={theme}>
-        <Button text="item-6" disabled={false} onClick={handleClick} />
+        <Button disabled={false} onSelect={handleClick} id="daok34-asd32-dsa">
+          item-6
+        </Button>
       </ThemeProvider>,
     )
     fireEvent.click(container.firstChild)
