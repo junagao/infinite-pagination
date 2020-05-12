@@ -66,7 +66,7 @@ export default function List() {
             id={id}
             name={name}
             selected={selected || false}
-            onSelect={() => handleSelectItem(id)}
+            onSelect={handleSelectItem}
           />
         ))}
       </ul>
