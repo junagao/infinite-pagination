@@ -4,7 +4,9 @@ import { Button } from 'components'
 
 const Item = ({ id, name, selected, onSelect }) => (
   <li data-testid="list-item">
-    <Button text={name} disabled={selected} onClick={() => onSelect(id)} />
+    <Button id={id} disabled={selected} onSelect={onSelect}>
+      {name}
+    </Button>
   </li>
 )
 
